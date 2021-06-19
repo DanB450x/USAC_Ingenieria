@@ -1,1 +1,0 @@
-python -m pysstv --mode MartinM1 Directorio_imagen Directorio.wav
