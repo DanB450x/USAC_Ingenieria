@@ -105,18 +105,3 @@ print("== Operación completa, precione cualquier tecla para continuar... ==")
 
 #-- Mostrar la imagen resultante
 img.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#https://github.com/MossFrog/SSTV-Decoder
