@@ -104,7 +104,7 @@ void loop() {
     //lcd.print("%");
     //lcd.display();
     delay(500);
-    lcd.clear();
+    //lcd.clear();
     }
 
 
