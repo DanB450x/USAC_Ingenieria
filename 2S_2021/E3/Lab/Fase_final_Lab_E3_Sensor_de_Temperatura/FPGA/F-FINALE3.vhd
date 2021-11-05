@@ -78,7 +78,7 @@ process(Clk)
 	  back <= back +1;
 	   if(back = 19999999) then
 	      m<= 0;
-		   z<= d + 1;
+		   z<= z + 1;
 		if(z = 1) then
          z<= 0;
 		 end if;	
@@ -111,7 +111,7 @@ process(Clk)
 	  back1 <= back1 +1;
 	   if(back1 = 1599999) then
 	      m<= 9;
-			z<= d - 1;
+			z<= z - 1;
 		if(z = 0) then
 		 z<= 1;
 		 end if;
@@ -120,18 +120,18 @@ process(Clk)
 
 	
 			if(NFX < 11999) then
-				NFX <= mux_dis + 1;
+				NFX <= NFX + 1;
 				else
 				n <= n + 1;
 				NFX<=0;
 			end if;
 			
 					
-				case a is
+				case n is
 				when 0 => En <= "011";
-							   contador<= u;
+							   count<= m;
 				when 1 => En <= "101";
-						      contador<= d;
+						      count<= z;
 				when 2 => En <= "110";
 								count<= 0;
 				when others => En <= "111";
